@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+  <aside class="sidebar">
+    <h2>Healthcare</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Patients</li>
+      <li>Appointments</li>
+      <li>Settings</li>
+    </ul>
+  </aside>
+
+
+  <main class="main">
+
+    <div class="header">
+      <input type="text" placeholder="Search..." />
+      <div class="user">Jessica</div>
+    </div>
+
+  
+    <section class="profile card">
+      <img id="img">
+      <div>
+        <h2 id="name"></h2>
+        <p>Age: <span id="age"></span></p>
+        <p>Gender: <span id="gender"></span></p>
+      </div>
+    </section>
+
+    <section class="vitals">
+      <div class="card">❤️ Heart: <span id="heart"></span></div>
+      <div class="card">🌡 Temp: <span id="temp"></span></div>
+      <div class="card">🫁 Resp: <span id="resp"></span></div>
+      <div class="card">🩸 BP: <span id="bp"></span></div>
+    </section>
+
+
+    <section class="card">
+      <h3>Blood Pressure</h3>
+      <canvas id="chart"></canvas>
+    </section>
+
+    <section class="card">
+      <h3>Diagnosis History</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>BP</th>
+            <th>Heart</th>
+            <th>Temp</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h3>Lab Results</h3>
+      <ul id="labs"></ul>
+    </section>
+
+  </main>
+
+  <aside class="right card">
+    <h3>Patient Details</h3>
+    <p>DOB: <span id="dob"></span></p>
+    <p>Phone: <span id="phone"></span></p>
+    <p>Address: <span id="address"></span></p>
+  </aside>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
